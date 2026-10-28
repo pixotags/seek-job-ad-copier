@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Seek Job Ad Copier",
+  "version": "1.0.0",
+  "description": "One click copies a Seek job ad — title, company, work type, description and employer questions — as clean text.",
+  "permissions": ["activeTab", "scripting"],
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "action": { "default_title": "Copy this job ad", "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" } },
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+J" },
+      "description": "Copy this job ad"
+    }
+  }
+}
